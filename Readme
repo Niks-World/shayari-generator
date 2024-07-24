@@ -1,0 +1,85 @@
+# Shayari Generator
+
+## Overview
+
+This project is a web application that generates Shayaris based on user-provided keywords. It uses the Google Gemini API to generate the Shayaris and Flask for the web server.
+
+## Make Sure that Your Python Version is upto date 3.12.4
+
+bash 
+python --version
+
+
+## Prerequisites
+
+- Python 3.x
+- Flask
+- google-generativeai
+- python-dotenv
+
+## Setup
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/your-username/shayari-generator.git
+    cd shayari-generator
+    ```
+
+2. **Create a virtual environment**
+
+    ```bash
+    python -m venv venv
+    ```
+
+3. **Activate the virtual environment**
+
+    - On Windows:
+        ```bash
+        venv\Scripts\activate
+        ```
+    - On macOS/Linux:
+        ```bash
+        source venv/bin/activate
+        ```
+
+4. **Install dependencies**
+
+    ```bash
+    pip install flask google-generativeai python-dotenv
+    ```
+
+5. **Set up environment variables**
+
+    Create a `.env` file in the root of the project and add your Google Gemini API key:
+
+    ```plaintext
+    API_KEY=YOUR_API_KEY_HERE
+    ```
+
+## Running the Application
+
+1. **Start the Flask server**
+
+    ```bash
+    python ai.py
+    ```
+
+2. **Open your browser**
+
+    Navigate to `http://localhost:5000` to access the application.
+
+3. **Generate Shayari**
+
+    Enter a keyword in the input field and click "Generate Shayari" to generate a Shayari based on the provided keyword.
+
+## Project Structure
+
+shayari-generator/
+├── app.py
+├── .env
+├── templates/
+│ └── index.html
+└── static/
+├── script.js
+└── style.css
